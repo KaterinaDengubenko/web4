@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Настройка viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/font-glyphicons.css">
+	<link rel="stylesheet" href="css/bootstrap-dropdown-submenu.css">
+	  <!-- Подключаем jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+        <script src="first.js"></script>
+
+
+</head>
+<body>
+        <header>
+                
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <a class="navbar-brand" href="main.html">
+                       Главная
+                        </a>
+            
+                </nav>
+                </header>
+   <img src="trap.png" class="rounded mx-auto d-block" alt="trap">
+ 
+    <div class ="row">
+        <div class="col-md-4"></div>
+        <div class ="col-md-4">
+            <form name=calcarea>
+                    <button type="button" class="btn btn-light" onclick="this.form.area.value = squareF(this.selectedIndex);"> Площадь фигуры по заданным параметрам </button>     
+                        <input type=text name="area" size=25 readonly>     
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+

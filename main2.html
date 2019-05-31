@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Настройка viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/font-glyphicons.css">
+	<link rel="stylesheet" href="css/bootstrap-dropdown-submenu.css">
+	  <!-- Подключаем jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+ 
+
+</head>
+<body>
+    <header>
+		<!--Навигационная панель navbar -->
+
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+<!-- Brand -->
+		<a class="navbar-brand" href="main.html"> <span class="glyphicon glyphicon-hand-right"> </span>Pacman <span class="sr-only">(current)</span></a>
+<!-- Links -->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="svg.html">SVG</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="mathml.html">Math</a>
+			</li>
+	 <li class="nav-item dropdown drophover">
+		<a class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Пункт 1</a></li>
+                            <li><a href="#">Пункт 2</a></li>
+                            <li><a href="#">Пункт 3</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Пункт 4</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Подпункт 4.1</a></li>
+									<li><a href="#">Подпункт 4.2</a></li>
+									<li><a href="#">Подпункт 4.3</a></li>
+									<li><a href="#">Прдпункт 4.4</a></li>
+								</ul>
+							</li>
+			
+		</ul>	
+	</nav>
+	</header>
+
+<!-- Контент страницы -->
+   
+<div class="container-fluid">
+	<div class="row">
+		<div class = "col-md-4 col-xl-3">
+			
+				<div id="accordion">
+						<br>
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<h5 class="mb-0">
+									<button class="btn btn-link" id="MainA" data-toggle="collapse"
+										data-target="#SiteMap" aria-expanded="true" aria-controls="SiteMap">
+										Карта сайта
+									</button>
+								</h5>
+							</div>
+							<div id="SiteMap" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body">
+									<a href="main.html">Главная</a>
+									<ul>
+										<li>
+											<a href="works.html">Задания</a>
+											<ul>
+												<li> <a href="svg.html">Рисунок</a></li>
+												<li><a href="mathml.html">Формулы</a></li>
+											</ul>
+										</li>										
+									</ul>
+								</div>
+							</div>
+						</div>						
+					</div>
+				
+		</div>
+		
+		<div class = "col-md-8 col-xl-9">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+
+					<!-- Indicators -->
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+					</ul>
+
+			  <!-- The slideshow -->
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img src="images/pacman1.jpg" alt="pac"> 
+				</div>
+				<div class="carousel-item">
+				  <img src="images/pacman2.jpg" alt="ma">
+				</div>
+				<div class="carousel-item">
+				  <img src="images/pacman3.jpg" alt="n">
+				</div>
+			  </div>
+
+			  <!-- Left and right controls -->
+			  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			  </a>
+
+			</div>
+					<nav>
+						<div class="nav nav-tabs" id="nav-tab" role="tablist">
+							<a class="nav-item nav-link active" id="nav-welcome-tab" data-toggle="tab" href="#nav-home"
+								role="tab" aria-controls="nav-home" aria-selected="true">Main</a>
+							<a class="nav-item nav-link" id="nav-history-tab" data-toggle="tab" href="#nav-profile"
+								role="tab" aria-controls="nav-profile" aria-selected="false">Медиа-объект</a>
+							<a class="nav-item nav-link" id="nav-links-tab" data-toggle="tab" href="#nav-contact"
+								role="tab" aria-controls="nav-contact" aria-selected="false">Ждите обновления</a>
+						</div>
+					</nav>
+					<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+							aria-labelledby="nav-home-tab">
+							<br>
+							<div class="media">
+								<div class="media-body">
+									<h5 class="mt-0 text-info">Welcome!</h5>
+									<p>
+										Site about pacman,u a welcome
+										<button type="button" class="btn btn-primary" data-toggle="popover" title="Сообщение" data-content="Ура, Bootstrap 4 работает">Поднеси ко мне курсор</button>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+							<br>
+							<div class="media">
+								<div class="media-left">
+									<img class="media-object" src="images/media-image-pac.jpg" alt="Generic placeholder image">
+								</div>
+								<div class="media-body">
+									<h5 class="mt-0">Pacman</h5>
+									<p> аркадная видеоигра, разработанная японской компанией Namco и вышедшая в 1980 году. Задача игрока — управляя Пакманом, съесть все точки в лабиринте, избегая встречи с привидениями, которые гоняются за героем. С повышением уровня игры изменяется только её сложность, архитектура лабиринта остаётся идентичной. Всего в игре 256 уровней, последний из которых невозможно завершить из-за ошибки переполнения.</p>
+
+									<p>Основные персонажи:<p>
+
+									<li>Красный призрак Шэдоу  по прозвищу Блинки </li>
+									<li>Розовый призрак Спиди  по прозвищу Пинки </li>
+									<li>Голубой призрак Башфул по прозвищу Инки</li>
+									<li>Оранжевый призрак Поки  по прозвищу Клайд</li>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+							<br>
+							<div class="media">
+								<div class="media-body">
+									<h5 class="mt-0">Тут скоро что-то будет <span class="badge badge-pill badge-warning">Warning</span></h5>
+									<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Запустить модальное окно
+</button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+								</div>
+							</div>	
+						</div>
+					</div>	
+</div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(function () {
+$('[data-toggle="popover"]').popover({trigger:'hover'});
+});
+</script>
+
+</body>	
